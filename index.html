@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Satya Nerurkar</title>
+    
+    <!-- imported the css file -->
+    <link rel="stylesheet" href="./styles.css" />
+
+    <script src="https://kit.fontawesome.com/4df23d7b96.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Header part -->
+    <div id = "header">
+      <div class="container">
+        <nav>
+          <!-- Main Header Logo -->
+          <img src="images/logo.png" class="logo">
+          <ul id = "sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#badges">Badges</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Data Scientist</p>
+          <h1>Hi, I'm <span>Satya</span><br>Nerurkar from INDIA!</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- About me section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img id="profile-photo" src="images/user.png">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>Welcome to my portfolio website! 
+              I am a highly motivated and passionate individual with strong foundation in Data Science and Machine Learning, as well as a passion for solving complex problems and finding new ways to use data to drive business decisions. On this website, you will find a selection of my projects.I hope you enjoy exploring my work and learning more about my skills and experiences.</p>
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li><span>Statistics</span><br>Descriptive and inferential statistics</li>
+                  <li><span>Data Analytics</span><br>SQL, Plotly, Seaborn and PowerBI</li>
+                  <li><span>Machine Learning</span><br>Regression, Classification and Clustering</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li><span>2021-2022</span><br>Assistant System Engineer at Tata Consultancy Services.</li>
+                  <li><span>2019</span><br>Summer Intern at Eduvance </li>
+                  <!--<li><span>exp33</span><br>describe exp3</li>-->
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li><span>2021</span><br>BE - Ramrao Adik Institute of Technology</li>
+                  <li><span>2017</span><br>HSC - Ramnivas Ruia Junior College</li>
+                  <li><span>2015</span><br>SSC - Wamanrao Muranjan Madhyamik Vidyalaya</li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- services section -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-brands fa-python"></i>
+            <h2>Python Developer</h2>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptatum cupiditate officia porro quasi id blanditiis vitae aspernatur est deserunt ad eius. Tenetur incidunt aliquam illo ipsam eveniet suscipit perferendis.</p> -->
+            <!-- <a href="#">Learn more</a> -->
+          </div>
+          <div>
+            <i class="fa-solid fa-chart-line"></i>
+            <h2>Data Analytics</h2>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptatum cupiditate officia porro quasi id blanditiis vitae aspernatur est deserunt ad eius. Tenetur incidunt aliquam illo ipsam eveniet suscipit perferendis.</p> -->
+            <!-- <a href="#">Learn more</a> -->
+          </div>
+          <div>
+            <i class="fa-solid fa-computer"></i>
+            <h2>Machine Learning</h2>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptatum cupiditate officia porro quasi id blanditiis vitae aspernatur est deserunt ad eius. Tenetur incidunt aliquam illo ipsam eveniet suscipit perferendis.</p> -->
+            <!-- <a href="#">Learn more</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects section -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img class="project-photo" src="images/work-1.png">
+            <div class="layer">
+              <h3>Flipkart review Scraper</h3>
+              <p>A web scraper that extracts relevant information and reviews about a searched product available on flipkart.com. This allows users to easily gather large amounts of data from Flipkart.com, such as reviews and ratings of a specific product, which can be useful for market research, price comparison, or monitoring the popularity of a product over time.</p>
+              <a href="https://github.com/SatyaNerurkar/Flipkart-review-scraper"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img class="project-photo" src="images/work-2.png">
+            <div class="layer">
+              <h3>Air pressure sensor fault detection</h3>
+              <p>Air pressure sensor fault detection is a machine learning application that uses sensor data to detect and diagnose faults in air pressure systems. The system is able to detect sensor faults and provide early warning of potential issues before they cause significant damage or downtime.</p>
+              <a href="https://github.com/SatyaNerurkar/aps-fault-detection"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img class="project-photo" src="images/work-3.png">
+            <div class="layer">
+              <h3>Insurance premium predictor</h3>
+              <p>Application that will predict the cost of the insurance plan which gives the individual, an idea as to what kind of insurance premium they can prefer over a certain period of time looking at the constraints and viabilities of the insurance plan.</p>
+              <a href="https://github.com/SatyaNerurkar/Insurance-premium-prediction"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- <a href="#" class="btn">See more</a> -->
+      </div>
+    </div>
+
+    <!-- Badges section -->
+    <div id="badges">
+      <div class="container">
+        <h1 class="sub-title">My Badges</h1>
+        <div id="badges-list">
+          <div class="badge">
+            <img src="images/microsoft-certified-azure-fundamentals.png" alt="">
+          </div>
+          <div class="badge">
+            <img src="images/microsoft-certified-azure-data-fundamentals.png" alt="">
+          </div>
+          <div class="badge">
+            <img src="images/microsoft-certified-azure-ai-fundamentals.png" alt="">
+          </div>
+          <div id="more" class="badge">
+            <img src="images/ibm-machine-learning-essentials.png" alt="">
+          </div>
+        </div>
+        <div onclick="moreCourses()" id="more-badges" class="btn">See more</div>
+      </div>
+    </div>
+
+    <!-- contact section -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <div id="find-me-on">
+              <div id="find-me-card">
+                <h1 class="sub-title">Find me on</h1>
+                <span class="faded faded-top faded-bottom">
+                  <img width="330" src="images/user_find.png" alt="">
+                </span>
+              </div>
+            </div>
+            <div class="social-icons">
+              <div id="social-card">
+              <p><i class="fa-regular fa-envelope"></i> <a href = "mailto: satyanerurkar@gmail.com">satyanerurkar@gmail.com</a></p>
+              <p><i class="fa-solid fa-phone"></i> <a href="tel:+91-7738983639">+91-7738983639</a></p>
+              <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/satya-nerurkar-9b0655190/">Satya Nerurkar</a></p>
+              <p><i class="fa-brands fa-github"></i> <a href="https://github.com/SatyaNerurkar">SatyaNerurkar</a></p>
+              <p><i class="fa-brands fa-discord"></i> <a href="https://discordapp.com/users/746358310810157106/">SatyaNerurkar</a></p>
+              <p><i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/satya.o_0.nerurkar/">SatyaNerurkar</a></p>
+              </div>
+            </div>
+            <a href="resume/Satya Nerurkar Resume V1.2.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name = 'submit-to-google-sheet'>
+              <h1 class="sub-title">Contact me</h1>
+              <input type="text" name="Name" placeholder="Your name" required>
+              <input type="email" name="E-mail" placeholder="Your email" required>
+              <textarea name="Message" rows="5" placeholder="Your message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id = "msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© Copyright 2023. Made with <i class="fa-solid fa-heart"></i> by Satya</p>
+      </div>
+    </div>
+
+
+
+    <!--
+    <main>
+      <nav class="nav_bar">
+        <div class="container">
+          <a href="https://ineuron.ai/">
+            <img src="/images/ineuron-logo.png" alt="logo" class="nav_bar_logo"
+          /></a>
+        </div>
+      </nav>
+
+      <section class="container">
+        <div class="counter">
+          <div class="counter_body">
+            <h1 class="counter_body_heading">Counter</h1>
+            <p id="counter" class="counter_count_display">0</p>
+            <div class="counter_button">
+              <button
+                id="decrement"
+                class="counter_decrement"
+                onclick="{decrementButton}"
+              >
+                - Decrement
+              </button>
+              <button
+                id="increment"
+                class="counter_increment"
+                onclick="{incrementButton}"
+              >
+                + Increment
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  -->
+
+    <!-- imported js file below -->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname){
+        for (tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+      }
+
+      
+      function moreCourses() {
+        var moreCoursesText = document.getElementById("more-badges").innerText;
+        if (moreCoursesText == "See more") {
+          document.getElementById("more").style.display = "block";
+          document.getElementById("more-badges").innerText = "See less";
+        } else {
+          document.getElementById("more").style.display = "none";
+          document.getElementById("more-badges").innerText = "See more";
+        }
+      }
+
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu(){
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu(){
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyWV4OzuLc-68Yu_yszxIxHCcHYY0SDzVPZS0WXyTdQ3wN4yZKMxUsxqgaX4vj1VsLT/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {msg.innerHTML = "Message sent successfully!"
+                            setTimeout(function(){
+                              msg.innerHTML = ""},5000)
+                              form.reset()
+                          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  </body>
+</html>
